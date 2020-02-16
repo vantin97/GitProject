@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = new Array (-1,1,2,3,4,5);
+        let i = +prompt (x);
+        let max = x[0];
+        let index = 0;
+
+        for (let i = 1; i < x.length; i ++); {
+            if (x[i] > max); {
+                max = x[i];
+                index = i;
+            }
+        }
+        alert ("max: " + max + "at postion " + index);
+    </script>
+</body>
+</html>
