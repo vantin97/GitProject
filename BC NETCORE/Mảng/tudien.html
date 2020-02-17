@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ Điển</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <input type="button" onclick=trans();   value="Trans">
+    <div id="result"></div>
+    <script>
+        function trans(){
+            let tiengAnh= ["red", "black", "blue"];
+            let tiengViet= ["đỏ", "đen", "xanh"];
+            
+            let inputEng = document.getElementById('input').value;
+            let flag = false;
+            for ( let i = 0; i<tiengAnh.length; i++){  
+                if(tiengAnh[i].indexOf(inputEng) !== -1){
+                    flag=true;
+                    document.getElementById("result").innerHTML = tiengViet[i];
+                                
+                } else if(tiengViet[i].indexOf(inputEng) !== -1){
+                    flag=true;
+                    document.getElementById("result").innerHTML = tiengAnh[i];
+                }  
+            } 
+            if(flag==false){
+                document.getElementById("result").innerHTML ="Cant Find";
+            }      
+        }
+      
+    </script>
+</body>
+</html>
