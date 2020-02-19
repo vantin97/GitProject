@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Feet to meter converter</h1>
+		<table>
+			<tr>
+				<th>Feet</th>
+				<th>Meter</th>
+			</tr>
+			<tr>
+				<td><input type="number" id="feet" oninput="feetToMeter(this.value)"></td>
+				<td><input type="number" id="meter" oninput="meterToFeet(this.value)"></td>
+			</tr>
+		</table>
+    <script>
+        function feetToMeter(f) {
+            document.getElementById("meter").value= f * 0.305;
+        }
+        function meterTofeet(m) {
+            document.getElementById("feet").value= m * 3.279;
+        }
+    </script>
+</body>
+</html>
