@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function TrimAdvance(str){
+            let result = '';
+            str = str.trim();
+            for(let i = 0; i < str.length; i++){
+                if((i+1) < str.length && str[i] == ' ' && str[i+1] == ' ')
+                    continue;
+                result += str[i];
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>
