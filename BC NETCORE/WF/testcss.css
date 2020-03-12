@@ -1,0 +1,23 @@
+#a{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100%;
+}
+#b{
+    background-color: cadetblue;
+    height: 500px;
+    width: 70%;
+    float: left;
+}
+#c{
+    background-color: darkgoldenrod;
+    height: 500px;
+    width: 30%;
+    float: left;    
+}
+#d{
+    background-color: darkgreen;
+    height: 300px;
+    width: 100%;
+    clear: both;
+}
